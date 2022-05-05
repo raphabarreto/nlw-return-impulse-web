@@ -55,21 +55,21 @@ export function FeedbackContentStep({
           placeholder="Conte com detalhes o que está acontecendo"
           onChange={(event) => setComment(event.target.value)}
         />
-      </form>
 
-      <footer className="flex gap-2 mt-2">
-        <ScreenshotButton
-          screenshot={screnshot}
-          onScreenshotTaken={setScrenshot}
-        />
-        <button
-          type="submit"
-          disabled={comment.length === 0}
-          className="p-2 bg-brand-500 rounded-md border-transparent flex-1 flex justify-center items-center text-sm hover:bg-brand-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors disabled:opacity-50 disabled:hover:bg-brand-500"
-        >
-          Enviar Feedback
-        </button>
-      </footer>
+        <footer className="flex gap-2 mt-2">
+          <ScreenshotButton
+            screenshot={screnshot}
+            onScreenshotTaken={setScrenshot}
+          />
+          <button
+            type="submit"
+            disabled={comment.length === 0}
+            className="p-2 bg-brand-500 rounded-md border-transparent flex-1 flex justify-center items-center text-sm hover:bg-brand-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors disabled:opacity-50 disabled:hover:bg-brand-500"
+          >
+            Enviar Feedback
+          </button>
+        </footer>
+      </form>
     </>
   );
 }
